@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ikparis-usd.myshopify.com/sitemap.xml
+Host: https://ikparis-usd.myshopify.com
