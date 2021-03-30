@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-3d6cb712f21e7ae26ffc.js"
+    "url": "webpack-runtime-a76201e5f9a76b1b5189.js"
   },
   {
     "url": "styles.64cd30578d5efef920f9.css"
@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-182a7a9f159c562d92d6.js"
   },
   {
-    "url": "app-5ffe2c2e2b4529554cbe.js"
+    "url": "app-3b287e7b32d4c5df1194.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a0acf574deb00d329eaa3c97fd260584"
+    "revision": "4a5928cd22d730fa8d06ec13f7877347"
   },
   {
     "url": "SocialIcon-2fee44c4fd4af5a65b9e.js"
@@ -57,7 +57,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/sq/d/2744294623.json",
-    "revision": "500f5b38634f130509dfc1eaa23c2e4b"
+    "revision": "248675022fd9de99cf90bd71edd62bc9"
   },
   {
     "url": "page-data/sq/d/2923265353.json",
@@ -73,7 +73,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "1d8a16caa2a997e0e3b6282c80d47322"
+    "revision": "c6d2e2ec39d5ac1278bcad948d02ed95"
   },
   {
     "url": "polyfill-0798460b8a7d00d1176c.js"
@@ -172,7 +172,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/karite-gatsby/app-5ffe2c2e2b4529554cbe.js`))) {
+  if (!resources || !(await caches.match(`/karite-gatsby/app-3b287e7b32d4c5df1194.js`))) {
     return await fetch(event.request)
   }
 
