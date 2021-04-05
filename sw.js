@@ -27,37 +27,36 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9cd267806853bde3aa82.js"
+    "url": "webpack-runtime-f6e4395f885e5611eaff.js"
   },
   {
-    "url": "styles.64cd30578d5efef920f9.css"
+    "url": "styles.c72e11d3861806969d4c.css"
   },
   {
-    "url": "styles-5344a54242eba5dbb95e.js"
+    "url": "styles-136dffcde22e5b1103b3.js"
   },
   {
-    "url": "framework-182a7a9f159c562d92d6.js"
+    "url": "framework-338f0cd752cdf476fc07.js"
   },
   {
-    "url": "app-918ba51b68bbac3b46de.js"
+    "url": "11100001-6a27cc2c234957255985.js"
+  },
+  {
+    "url": "app-685c6e04c095da7b5c6e.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "3031bc9f7382a7f6cea4f9549b5b1a4b"
+    "revision": "135e24bbfe5b7aae849f40428dd1e55f"
   },
   {
-    "url": "SocialIcon-2fee44c4fd4af5a65b9e.js"
+    "url": "SocialIcon-3599c413fbb3baa6647f.js"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-7eeaa05baa3cf01d1a5d.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-959d7e10e315cfbb0346.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "ada47ae6a68625bb008ada9758ed743e"
-  },
-  {
-    "url": "page-data/sq/d/2021283861.json",
-    "revision": "81f522bd29c55a336dbb038dca5bf25e"
+    "revision": "c16da46cd32e04397f80fdc6edc62f08"
   },
   {
     "url": "page-data/sq/d/2744294623.json",
@@ -72,11 +71,15 @@ self.__precacheManifest = [
     "revision": "e2118a3ffc29312345e27bb1768855fd"
   },
   {
-    "url": "page-data/app-data.json",
-    "revision": "cf0dcdc2c682339112dac7acab3c1446"
+    "url": "page-data/sq/d/923754104.json",
+    "revision": "54eb5dfed9430332a1e5c90a121fea87"
   },
   {
-    "url": "polyfill-0798460b8a7d00d1176c.js"
+    "url": "page-data/app-data.json",
+    "revision": "c15dd30da4702bac15478aff826990d5"
+  },
+  {
+    "url": "polyfill-3732724668a85e8507c4.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -172,7 +175,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/karite-gatsby/app-918ba51b68bbac3b46de.js`))) {
+  if (!resources || !(await caches.match(`/karite-gatsby/app-685c6e04c095da7b5c6e.js`))) {
     return await fetch(event.request)
   }
 
