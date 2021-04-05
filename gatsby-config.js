@@ -123,6 +123,11 @@ module.exports = {
           ],
         },
         {
+          type: 'collection',
+          name: 'Face',
+          handle: 'face',
+        },
+        {
           type: 'section',
           children: [
             {
@@ -345,7 +350,7 @@ module.exports = {
         { name: 'Face', link: '/collection/face' },
         { name: 'Body', link: '/collection/body' },
         { name: 'Hair', link: '/collection/hair' },
-        { name: 'Best Sellers', link: '/collection/all?=sort_by=best-selling' },
+        { name: 'Best Sellers', link: '/collection/face' },
         { name: 'Gift Sets', link: '/collection/gift-sets' },
         { name: 'Accessories', link: '/collection/accessories' },
       ],
