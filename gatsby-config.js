@@ -123,11 +123,6 @@ module.exports = {
           ],
         },
         {
-          type: 'collection',
-          name: 'Face',
-          handle: 'face',
-        },
-        {
           type: 'section',
           children: [
             {
