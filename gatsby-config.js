@@ -35,7 +35,7 @@ module.exports = {
           background_color: '#fff',
           theme_color: '#323232',
           display: 'standalone',
-          icon: 'src/images/shopping_bag.svg',
+          icon: 'src/images/karite-logo.png',
           icon_options: {
             purpose: 'any maskable',
           },
@@ -51,7 +51,7 @@ module.exports = {
       storeDescription: 'Demo store description',
       logo: {
         url: 'https://cdn.shopify.com/s/files/1/0117/9005/7534/files/karite-logo-1531214864.png',
-        width: 130,
+        width: '100%',
         height: 'auto',
       }, 
       email: 'contact@ikparis.com',
@@ -178,21 +178,21 @@ module.exports = {
           ],
         },
         {
-          type: 'tabs',
+          type: 'section',
           children: [
             {
               title: 'Face',
-              type: 'tab',
+              type: 'tabs',
               handle: 'face',
             },
             {
               title: 'Body',
-              type: 'tab',
+              type: 'tabs',
               handle: 'body',
             },
             {
               title: 'Hair',
-              type: 'tab',
+              type: 'tabs',
               handle: 'hair',
             },
           ],
