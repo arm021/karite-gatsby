@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-f6e4395f885e5611eaff.js"
+    "url": "webpack-runtime-3e63f08f5683e5ded465.js"
   },
   {
     "url": "styles.c72e11d3861806969d4c.css"
@@ -42,11 +42,11 @@ self.__precacheManifest = [
     "url": "11100001-6a27cc2c234957255985.js"
   },
   {
-    "url": "app-685c6e04c095da7b5c6e.js"
+    "url": "app-d0cc5fd025d3be6a16e7.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "135e24bbfe5b7aae849f40428dd1e55f"
+    "revision": "95aab40beaa2e3c7c80fe3c097d35fd1"
   },
   {
     "url": "SocialIcon-3599c413fbb3baa6647f.js"
@@ -56,15 +56,19 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "c16da46cd32e04397f80fdc6edc62f08"
+    "revision": "125942cefb163a77baba402e56eb0f93"
   },
   {
     "url": "page-data/sq/d/2744294623.json",
-    "revision": "af088a0e38c42092184e6bb0c7fbecca"
+    "revision": "248675022fd9de99cf90bd71edd62bc9"
   },
   {
     "url": "page-data/sq/d/2923265353.json",
     "revision": "a3efd5a2f1f1cf8bbf82a50cb871c668"
+  },
+  {
+    "url": "page-data/sq/d/3839994529.json",
+    "revision": "0771284ce2cb578bfcc14f623dcd3955"
   },
   {
     "url": "page-data/sq/d/4007454649.json",
@@ -72,11 +76,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/sq/d/923754104.json",
-    "revision": "54eb5dfed9430332a1e5c90a121fea87"
+    "revision": "01d2931e04685afdf6d7c5d0cb3f39be"
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "c15dd30da4702bac15478aff826990d5"
+    "revision": "63b1f4fc6f469b3533832f376c6361b4"
   },
   {
     "url": "polyfill-3732724668a85e8507c4.js"
@@ -175,7 +179,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/karite-gatsby/app-685c6e04c095da7b5c6e.js`))) {
+  if (!resources || !(await caches.match(`/karite-gatsby/app-d0cc5fd025d3be6a16e7.js`))) {
     return await fetch(event.request)
   }
 
