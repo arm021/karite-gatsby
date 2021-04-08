@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-3e63f08f5683e5ded465.js"
+    "url": "webpack-runtime-1e77ca9dfeec871c30a8.js"
   },
   {
     "url": "styles.c72e11d3861806969d4c.css"
@@ -36,27 +36,31 @@ self.__precacheManifest = [
     "url": "styles-136dffcde22e5b1103b3.js"
   },
   {
-    "url": "framework-338f0cd752cdf476fc07.js"
+    "url": "framework-182a7a9f159c562d92d6.js"
   },
   {
-    "url": "11100001-6a27cc2c234957255985.js"
+    "url": "11100001-ebd36f22c3b9c65e48e7.js"
   },
   {
-    "url": "app-d0cc5fd025d3be6a16e7.js"
+    "url": "app-66a70099e2e552faffd2.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "95aab40beaa2e3c7c80fe3c097d35fd1"
+    "revision": "c4cf7e9fad8dbabacef2b71edc2c2edb"
   },
   {
-    "url": "SocialIcon-3599c413fbb3baa6647f.js"
+    "url": "SocialIcon-2fee44c4fd4af5a65b9e.js"
   },
   {
-    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-959d7e10e315cfbb0346.js"
+    "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-7eeaa05baa3cf01d1a5d.js"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "125942cefb163a77baba402e56eb0f93"
+    "revision": "1395e8bd6e874d199bf9de267974e44e"
+  },
+  {
+    "url": "page-data/sq/d/1707798776.json",
+    "revision": "72dc50a424b4186b8358739332341b2c"
   },
   {
     "url": "page-data/sq/d/2744294623.json",
@@ -80,10 +84,10 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "63b1f4fc6f469b3533832f376c6361b4"
+    "revision": "b10f640cd57dd8a69823dddc0be35983"
   },
   {
-    "url": "polyfill-3732724668a85e8507c4.js"
+    "url": "polyfill-0915eef9807f8e951b73.js"
   },
   {
     "url": "manifest.webmanifest",
@@ -179,7 +183,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/karite-gatsby/app-d0cc5fd025d3be6a16e7.js`))) {
+  if (!resources || !(await caches.match(`/karite-gatsby/app-66a70099e2e552faffd2.js`))) {
     return await fetch(event.request)
   }
 
