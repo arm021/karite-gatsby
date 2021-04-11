@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-1e77ca9dfeec871c30a8.js"
+    "url": "webpack-runtime-a75d224dc33db98fb9de.js"
   },
   {
     "url": "styles.c72e11d3861806969d4c.css"
@@ -42,11 +42,11 @@ self.__precacheManifest = [
     "url": "11100001-ebd36f22c3b9c65e48e7.js"
   },
   {
-    "url": "app-66a70099e2e552faffd2.js"
+    "url": "app-8e7a5980bdd73d087ad7.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "c4cf7e9fad8dbabacef2b71edc2c2edb"
+    "revision": "d8d06a0a623a87fc9b1e7564355b6456"
   },
   {
     "url": "SocialIcon-2fee44c4fd4af5a65b9e.js"
@@ -84,7 +84,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "b10f640cd57dd8a69823dddc0be35983"
+    "revision": "bbaa58a87275c89c2caa9125632eac3d"
   },
   {
     "url": "polyfill-0915eef9807f8e951b73.js"
@@ -183,7 +183,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/karite-gatsby/app-66a70099e2e552faffd2.js`))) {
+  if (!resources || !(await caches.match(`/karite-gatsby/app-8e7a5980bdd73d087ad7.js`))) {
     return await fetch(event.request)
   }
 
