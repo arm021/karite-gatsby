@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-9e1a1bf0482563ebe33b.js"
+    "url": "webpack-runtime-0c1c2c6c41a0b1d38ee4.js"
   },
   {
-    "url": "styles.0cd39f343b342d11b895.css"
+    "url": "styles.e08195a84ff021bebcee.css"
   },
   {
     "url": "styles-136dffcde22e5b1103b3.js"
@@ -42,11 +42,11 @@ self.__precacheManifest = [
     "url": "11100001-ebd36f22c3b9c65e48e7.js"
   },
   {
-    "url": "app-25f146beca984294efde.js"
+    "url": "app-48a4ef5c4def0da0f516.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "7f453497c9df386283ccf23bc554a0ea"
+    "revision": "34fa1e58c839dea4b6750928794d29da"
   },
   {
     "url": "SocialIcon-2fee44c4fd4af5a65b9e.js"
@@ -84,7 +84,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "add2a0990f576081e46ac4b2c7ef3423"
+    "revision": "3b6520058d1c83c44456cb20b549a175"
   },
   {
     "url": "polyfill-0915eef9807f8e951b73.js"
@@ -183,7 +183,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/karite-gatsby/app-25f146beca984294efde.js`))) {
+  if (!resources || !(await caches.match(`/karite-gatsby/app-48a4ef5c4def0da0f516.js`))) {
     return await fetch(event.request)
   }
 
